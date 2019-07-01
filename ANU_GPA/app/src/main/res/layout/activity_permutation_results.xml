@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--author Kalai, u6555407-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outerRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PermutationResults">
+
+    <TableLayout
+        android:id="@+id/headingTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headingTableLayout"
+        ></TableLayout>
+
+    <ScrollView
+        android:id="@+id/innerScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headingTableLayout">
+    <TableLayout
+        android:id="@+id/possibleResultsTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        >
+    </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/noResultsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="No Possible Results"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:textStyle="bold" />
+
+</RelativeLayout>

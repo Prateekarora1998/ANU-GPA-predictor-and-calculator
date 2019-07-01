@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--authors-->
+<!--Base:Prateek (u6742441) -->
+<!--Implementation: Kalai (u6555407)-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarStyle="outsideInset"
+    tools:context=".GPA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+        <TextView
+            android:id="@+id/localDataTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTextView"
+            android:layout_marginTop="20dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/cgpaTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sNumberOfCoursesEditText"
+            android:layout_marginTop="5dp"
+            android:text="Enter your CGPA"
+            android:textColor="#000"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sNumberOfCoursesEditText" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="Possible permutations based on a target GPA."
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/manualEntryButton"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/infoGPATextView"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/buttons"
+            android:text="CGPA:Manual Entry"
+            android:textColor="#0A0A0A" />
+
+        <Button
+            android:id="@+id/reCalculateButton"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/infoGPATextView"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/buttons"
+            android:text="Re-Calculate GPA"
+            android:textColor="#0E0D0E"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+
+        <TextView
+            android:id="@+id/numOfCourseDoneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cgpaEditText"
+            android:layout_marginTop="5dp"
+            android:text="Enter the number of courses done"
+            android:textColor="#000"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cgpaEditText" />
+
+        <EditText
+            android:id="@+id/numOfCourseDoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numOfCourseDoneTextView"
+            android:layout_marginTop="5dp"
+            android:hint="Number of Courses Done"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="72dp" />
+
+        <TextView
+            android:id="@+id/numOfTBTCourseTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numOfFailsNeededSwitch"
+            android:layout_marginTop="10dp"
+            android:text="Enter the number of courses yet to be taken"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manualEntryButton" />
+
+        <EditText
+            android:id="@+id/numOfTBTCourseEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/numOfTBTCourseTextView"
+            android:layout_marginTop="5dp"
+            android:hint="Inclusive of currently taking ones"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numOfTBTCourseTextView" />
+
+        <TextView
+            android:id="@+id/gpaWantedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numOfTBTCourseEditText"
+            android:layout_marginTop="5dp"
+            android:text="Enter the GPA you want to achieve"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numOfTBTCourseEditText" />
+
+        <EditText
+            android:id="@+id/sNumberOfCoursesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gpaWantedTextView"
+            android:layout_marginTop="5dp"
+            android:hint="GPA you want to achieve"
+            android:imeOptions="actionDone"
+            android:inputType="number|numberDecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gpaWantedTextView" />
+
+        <EditText
+            android:id="@+id/cgpaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cgpaTextView"
+            android:layout_marginTop="5dp"
+            android:hint="Your CGPA"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberDecimal"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/cgpaTextView"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/sNumberOfCoursesEditText"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/buttons"
+            android:text="Submit"
+            android:textColor="#080809" />
+
+        <TextView
+            android:id="@+id/infoGPATextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/localDataTextView"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="-175dp"
+            android:layout_marginRight="-175dp"
+            android:layout_toStartOf="@+id/reCalculateButton"
+            android:layout_toLeftOf="@+id/reCalculateButton"
+            android:gravity="center"
+            android:text=" If CGPA's known but not locally stored,Press: "
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/manualEntryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoGPATextView"
+            android:text="CGPA:Manual Entry"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <Switch
+            android:id="@+id/numOfFailsNeededSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manualEntryButton"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Consider Number of Fails in Result." />
+
+    </RelativeLayout>
+
+</ScrollView>

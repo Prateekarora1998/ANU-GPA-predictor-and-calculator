@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--author Prateek Arora, u6742441-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".GPACalc">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/hdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:paddingLeft="10dp"
+            android:text="Enter the number of courses in which you got HD's"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/hdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/hdTextView"
+            android:hint="High Distinctions."
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/dTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hdEditText"
+            android:paddingLeft="10dp"
+            android:text="Enter the number of courses in which you got D's"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/dEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/dTextView"
+            android:hint="Distinctions."
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/cTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dEditText"
+            android:paddingLeft="10dp"
+            android:text="Enter the number of courses in which you got CR's"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/cEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/cTextView"
+            android:hint="Credits."
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/pTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cEditText"
+            android:paddingLeft="10dp"
+            android:text="Enter the number of courses in which you got P's"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/pEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/pTextView"
+            android:hint="Passes."
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/fTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pEditText"
+            android:paddingLeft="10dp"
+            android:text="Enter the number of courses in which you got F's"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/fEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/fTextView"
+            android:hint="Fails or equivalents."
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/fEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttons"
+            android:textColor="#0A0A0A"
+            android:text="Done" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fEditText"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="406dp"
+            android:gravity="center"
+            android:text="RESULT"
+            android:textStyle="bold|italic"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/yourGpaIsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="47dp"
+            android:gravity="center"
+            android:text="Your GPA is :"
+            android:textStyle="bold|italic"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/gpaCalcTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="GPA Calculator"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--author Prateek Arora, u6742441-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".GPACalc">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/hdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:paddingLeft="10dp"
+            android:text="Enter addtional  High distinctions"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/hdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/hdTextView"
+            android:hint="High Distinctions."
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hdEditText"
+            android:paddingLeft="10dp"
+            android:text="Enter the additional Distinctions"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/dEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/dTextView"
+            android:hint="Distinctions."
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dEditText"
+            android:paddingLeft="10dp"
+            android:text="Enter the additional Credits"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/cEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/cTextView"
+            android:hint="Credits."
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/pTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cEditText"
+            android:paddingLeft="10dp"
+            android:text="Enter the additional Passes"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/pEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/pTextView"
+            android:hint="Passes."
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/fTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pEditText"
+            android:paddingLeft="10dp"
+            android:text="Enter the addtional Fails"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/fEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/fTextView"
+            android:hint="Fails or equivalents."
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/fEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttons"
+            android:textColor="#0A0A0A"
+            android:text="Done" />
+
+        <TextView
+            android:id="@+id/uResultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoTextView"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="RESULT"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateTextView"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Add your result of the recent courses \n so to update the locally stored cgpa.  \n Your CGPA is :"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/updateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="GPA Update"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--author Prateek Arora, u6742441-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideInset">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:id="@+id/anuGpaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="ANU GPA"
+            android:textColor="#000000"
+            android:layout_marginBottom="140dp"
+            android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/back_button"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/gpaCalcLinearLayout"
+            android:layout_marginRight="10dp"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_gradient_black_24dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPA Calculator"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:id="@+id/permutationLinearLayout"
+            android:background="@drawable/back_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_view_module_black_24dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Permutations"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/back_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/settingsLinearLayout"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_settings_black_24dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings "
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="15dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

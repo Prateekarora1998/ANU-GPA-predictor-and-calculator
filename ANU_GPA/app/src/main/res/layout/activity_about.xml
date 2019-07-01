@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--author Prateek Arora, u6742441-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    tools:context=".About">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            app:lottie_fileName="info.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
+
+        <!--Animation from https://lottiefiles.com/951-info-->
+        <!--Code for animation (lottie) https://airbnb.io/lottie/#/android-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prateek Arora, u6742441"
+            android:layout_below="@+id/animation_view"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:id="@+id/prateekTextView"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalai, u6555407"
+            android:layout_below="@+id/prateekTextView"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:id="@+id/kalaiTextView"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jared, u5953599"
+            android:layout_below="@+id/kalaiTextView"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:id="@+id/jaredTextView"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jaredTextView"
+            android:text="For the app manual, click on the link below"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:id="@+id/manualLinkTextView"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/linkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manualLinkTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:autoLink="all"
+            android:clickable="true"
+            android:text="https://docs.google.com/document/d/14eVqFJnUlzYDd52aarwIfn5zRquLR6GiM4EPI-Jwg3s/edit?usp=sharingLink" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="#000000"
+            android:layout_below="@id/linkTextView"
+            android:layout_marginTop="70dp"
+            android:text="Disclamer: The calculations done within the app doesn't guarantee the expected output in some cases due to precision issue.However,the app tries to provide the closest outputs."/>
+    </RelativeLayout>
+
+
+
+</ScrollView>

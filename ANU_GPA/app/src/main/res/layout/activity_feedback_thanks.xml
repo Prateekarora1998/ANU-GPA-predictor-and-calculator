@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--author Prateek Arora, u6742441-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackThanks">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        app:lottie_fileName="Check_Mark_Success_Data.json"
+        app:lottie_loop="false"
+        app:lottie_autoPlay="true" />
+
+    <!--Animation from https://lottiefiles.com/4964-check-mark-success-animation-->
+    <!--Code for animation (lottie) https://airbnb.io/lottie/#/android-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks for the feedback"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/animation_view"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"/>
+
+</RelativeLayout>
